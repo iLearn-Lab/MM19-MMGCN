@@ -1,6 +1,6 @@
 # MMGCN: Multi-modal Graph Convolution Network for Personalized Recommendation of Micro-video
 
-\> A novel multi-modal recommendation framework based on graph convolutional networks, explicitly modeling modal-specific user preferences to enhance micro-video recommendation.
+> A novel multi-modal recommendation framework based on graph convolutional networks, explicitly modeling modal-specific user preferences to enhance micro-video recommendation.
 
 ## Authors
 

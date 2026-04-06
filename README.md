@@ -8,35 +8,21 @@
 
 * Corresponding author (weiyinwei at hotmail.com)
 
+![Framework](framework.png)
+
 ## Links
 
-\- **Paper**: \[\`ACM MM'19\`\](https://dl.acm.org/doi/10.1145/3343031.3351034)  
+\- **Paper**: [`ACM MM'19`](https://dl.acm.org/doi/10.1145/3343031.3351034)  
 \- **Code Repository**: \[\`GitHub\`\](https://github.com/iLearn-Lab/MM19-MMGCN)
 
-\---
-
-## Table of Contents
-
-\- \[Updates\](\#updates)  
-\- \[Introduction\](\#introduction)  
-\- \[Highlights\](\#highlights)  
-\- \[Method / Framework\](\#method--framework)  
-\- \[Project Structure\](\#project-structure)  
-\- \[Installation\](\#installation)  
-\- \[Dataset / Benchmark\](\#dataset--benchmark)  
-\- \[Usage\](\#usage)  
-\- \[Citation\](\#citation)  
-\- \[Acknowledgement\](\#acknowledgement)  
-\- \[License\](\#license)
-
-\---
+---
 
 ## Updates
 
 \- \[10/2019\] Paper presented at ACM MM'19.  
 \- \[01/2020\] Initial release of the PyTorch implementation and toy datasets.
 
-\---
+---
 
 ## Introduction
 
@@ -45,21 +31,6 @@ This is the official PyTorch implementation for the paper **MMGCN: Multi-modal G
 Multi-modal Graph Convolution Network is a novel multi-modal recommendation framework based on graph convolutional networks. It explicitly models modal-specific user preferences to enhance micro-video recommendation. In this repository, we provide the updated code and utilize a full-ranking strategy for both validation and testing.
 
 
-
-## Project Structure
-
-
-├── Movielens              \# Processed Movielens dataset directory  
-├── Tiktok\_Kwai             \# Processed Tiktok and Kwai dataset directory  
-├── BaseModel.py           \# Base model definitions  
-├── Dataset.py             \# Data loading and processing scripts  
-├── Full\_vt.py             \# Full-ranking validation and testing scripts  
-├── Model\_MMGCN.py         \# Core MMGCN model implementation  
-├── Train.py               \# Training loop and logic  
-├── main.py                \# Main entry point for running experiments  
-└── README.md
-
----
 
 **Installation**
 
@@ -149,18 +120,6 @@ Some important arguments:
   It indicates the type of combination layer. Here we provide two options:
   1. `concat`(by default) implements the concatenation combination in combination layer. Usage `--concat 'True'`
   2. `ele` implements the element-wise combination in combination layer. Usage `--concat 'False'`
-## Dataset
-We provide three processed datasets: Kwai, Tiktok, and Movielnes.  
-- You can find the full version of recommendation datasets via [Kwai](https://www.kuaishou.com/activity/uimc), [Tiktok](http://ai-lab-challenge.bytedance.com/tce/vc/), and [Movielens](https://grouplens.org/datasets/movielens/).
-Since the copyright of datasets, we cannot release them directly. 
-To facilate the line of research, we provide some toy datasets[[BaiduPan](https://pan.baidu.com/s/1BODXP7iihw8qtxpLeEv_XA)](code: zsye) or [[GoogleDriven]](https://drive.google.com/file/d/1NoisyVDFWykTszSIbHdeoBrKn0t-D0ps/view?usp=sharing). 
-Anyone needs the full datasets, please contact the owner of datasets. 
-
-||#Interactions|#Users|#Items|Visual|Acoustic|Textual|
-|:-|:-|:-|:-|:-|:-|:-|
-|Kwai|1,664,305|22,611|329,510|2,048|-|100|
-|Tiktok|726,065|36,656|76,085|128|128|128|
-|Movielens|1,239,508|55,485|5,986|2,048|128|100|
 
 -`train.npy`
    Train file. Each line is a user with her/his positive interactions with items: (userID and micro-video ID)  
@@ -170,27 +129,13 @@ Anyone needs the full datasets, please contact the owner of datasets.
    Test file. Each line is a user with several positive interactions with items: (userID and micro-video ID)  
 
 
-**Citation**
-
-If you want to use our codes and datasets in your research, please cite:
-
-Code snippet
-
-@inproceedings{MMGCN,  
-  title     \= {MMGCN: Multi-modal graph convolution network for personalized recommendation of micro-video},  
-  author    \= {Wei, Yinwei and Wang, Xiang and Nie, Liqiang and He, Xiangnan and Hong, Richang and Chua, Tat-Seng},  
-  booktitle \= {Proceedings of the 27th ACM International Conference on Multimedia},  
-  pages     \= {1437--1445},  
-  year      \= {2019}  
-}
-
-## ---
+---
 
 **Acknowledgement**
 
 The copyright for the program is owned by Shandong University.
 
-## ---
+---
 
 **License**
 
@@ -202,3 +147,18 @@ For commercial projects that require the ability to distribute the code of this 
 1\. [https://github.com/Liuwq-bit/LightGT](https://github.com/Liuwq-bit/LightGT)  
 2\. [https://github.com/Liuwq-bit/LightGT](https://github.com/Liuwq-bit/LightGT)  
 3\. [https://github.com/weiyinwei/PHR\_GCN](https://github.com/weiyinwei/PHR_GCN)
+
+
+# Citation
+
+If you want to use our codes and datasets in your research, please cite:
+
+``` 
+@inproceedings{MMGCN,  
+  title     \= {MMGCN: Multi-modal graph convolution network for personalized recommendation of micro-video},  
+  author    \= {Wei, Yinwei and Wang, Xiang and Nie, Liqiang and He, Xiangnan and Hong, Richang and Chua, Tat-Seng},  
+  booktitle \= {Proceedings of the 27th ACM International Conference on Multimedia},  
+  pages     \= {1437--1445},  
+  year      \= {2019}  
+}
+``` 

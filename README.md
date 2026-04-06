@@ -4,12 +4,27 @@
 
 ## Authors
 
-**Yinwei Wei**, **Xiang Wang**, **Liqiang Nie**, **Xiangnan He**, **Richang Hong**, **Tat-Seng Chua**
+**Yinwei Wei**<sup>1</sup>, **Xiang Wang**<sup>2</sup>, **Liqiang Nie**<sup>1</sup>\*, **Xiangnan He**<sup>3</sup>, **Richang Hong**<sup>4</sup>, **Tat-Seng Chua**<sup>2</sup>
 
-* Corresponding author (weiyinwei at hotmail.com)
+<sup>1</sup> Shandong University, China  
+<sup>2</sup> National University of Singapore, Singapore  
+<sup>3</sup> University of Science and Technology of China, China  
+<sup>4</sup> Hefei University of Technology, China  
+\* Corresponding author
 
-![Framework](framework.png)
+## Table of Contents
 
+- [Updates](#updates)
+- [Introduction](#introduction)
+- [Method / Framework](#method--framework)
+- [Installation](#installation)
+- [Dataset / Benchmark](#dataset--benchmark)
+- [Usage](#usage)
+- [License](#license)
+
+
+
+---
 ## Links
 
 \- **Paper**: [`ACM MM'19`](https://dl.acm.org/doi/10.1145/3343031.3351034)  
@@ -30,16 +45,21 @@ This is the official PyTorch implementation for the paper **MMGCN: Multi-modal G
 
 Multi-modal Graph Convolution Network is a novel multi-modal recommendation framework based on graph convolutional networks. It explicitly models modal-specific user preferences to enhance micro-video recommendation. In this repository, we provide the updated code and utilize a full-ranking strategy for both validation and testing.
 
+---
+
+## Method / Framework
+
+![Framework](framework.png)
+
+---
 
 
-**Installation**
+## Installation
 
 ### **1\. Clone the repository**
 
-Bash
-
-git clone \[https://github.com/iLearn-Lab/MM19-MMGCN.git\](https://github.com/iLearn-Lab/MM19-MMGCN.git)  
-cd MM19-MMGCN
+`git clone \[https://github.com/iLearn-Lab/MM19-MMGCN.git\](https://github.com/iLearn-Lab/MM19-MMGCN.git)  `
+`cd MM19-MMGCN`
 
 ### **2\. Environment Requirements**
 
@@ -54,15 +74,13 @@ The code has been tested running under **Python 3.5.2**. The required packages a
 
 Install the dependencies using pip:
 
-Bash
-
-pip install torch==1.1.0 torchvision  
-pip install torch-scatter==1.2.0 torch-sparse==0.4.0 torch-cluster==1.4.2 torch-geometric==1.2.1  
-pip install numpy==1.16.0
+`pip install torch==1.1.0 torchvision`
+`pip install torch-scatter==1.2.0 torch-sparse==0.4.0 torch-cluster==1.4.2 torch-geometric==1.2.1  `
+`pip install numpy==1.16.0`
 
 ---
 
-**Dataset / Benchmark**
+## Dataset / Benchmark
 
 We provide three processed datasets: Kwai, Tiktok, and Movielens.
 
@@ -75,7 +93,7 @@ To facilitate this line of research, we provide some toy datasets:
 
 If you need the full datasets, please contact the respective data owners.
 
-### **Dataset Statistics**
+### Dataset Statistics
 
 | Dataset | \#Interactions | \#Users | \#Items | Visual | Acoustic | Textual |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -91,7 +109,7 @@ If you need the full datasets, please contact the respective data owners.
 
 ---
 
-**Usage**
+## Usage
 
 The instruction of commands has been clearly stated in the codes. Run the following examples to train the models on different datasets.
 
@@ -137,7 +155,7 @@ The copyright for the program is owned by Shandong University.
 
 ---
 
-**License**
+## License
 
 This program is licensed under the [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.html). Any derivative work obtained under this license must be licensed under the GNU General Public License as published by the Free Software Foundation, either Version 3 of the License, or (at your option) any later version, if this derivative work is distributed to a third party.
 
@@ -149,7 +167,7 @@ For commercial projects that require the ability to distribute the code of this 
 3\. [https://github.com/weiyinwei/PHR\_GCN](https://github.com/weiyinwei/PHR_GCN)
 
 
-# Citation
+## Citation
 
 If you want to use our codes and datasets in your research, please cite:
 
